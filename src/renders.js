@@ -72,23 +72,23 @@ document.addEventListener('DOMContentLoaded', () => {
       }) => {
         const item = document.createElement('li');
         item.innerHTML = `
-${haveDiscount ? '<div class="discount">Discount</div>' : ''}
-<img src=${photo} />
-<div class="content">
-    <h3>${brand} - ${model}</h3>
-    <p class="${!isStoredInFacility && 'through'}">${price} ₴</p>
-    <div class="flex">color: <span class="color" style="background-color: ${color}"></span></div>
-    <div class="flex">
-        Country: ${country}
-    </div>
-    <div class="flex">
-        Memory: ${memory}GB
-    </div>
-    <div class="flex">
-        OS: ${os}
-    </div>
-</div>
-`;
+          ${haveDiscount ? '<div class="discount">Discount</div>' : ''}
+          <img src=${photo} />
+          <div class="content">
+              <h3>${brand} - ${model}</h3>
+              <p class="${!isStoredInFacility && 'through'}">${price} ₴</p>
+              <div class="flex">color: <span class="color" style="background-color: ${color}"></span></div>
+              <div class="flex">
+                  Country: ${country}
+              </div>
+              <div class="flex">
+                  Memory: ${memory}GB
+              </div>
+              <div class="flex">
+                  OS: ${os}
+              </div>
+          </div>
+        `;
 
         list.append(item);
       }
