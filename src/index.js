@@ -68,16 +68,16 @@ console.log(maxPriceReducer());
 
 const toMaxSorter = () => {
   return goods.sort((a, b) => {
-    if (a.price > b.price) return 1;
-    if (a.price < b.price) return -1;
+    if (a.price < b.price) return 1;
+    if (a.price > b.price) return -1;
     return 0;
   });
 };
 
 const toMinSorter = () => {
   return goods.sort((a, b) => {
-    if (a.price > b.price) return -1;
-    if (a.price < b.price) return 1;
+    if (a.price < b.price) return -1;
+    if (a.price > b.price) return 1;
     return 0;
   });
 };
