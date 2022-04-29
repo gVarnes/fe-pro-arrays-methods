@@ -73,7 +73,7 @@ const toMaxSorter = () => {
     return 0;
   });
 };
-
+//
 const toMinSorter = () => {
   return goods.sort((a, b) => {
     if (a.price < b.price) return -1;
